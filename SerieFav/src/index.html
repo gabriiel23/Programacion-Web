@@ -1,0 +1,178 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+
+<style>
+    #seccion {
+        display: flex;
+        width: 1300px;
+        height: 430px;
+        justify-content: center;
+        margin: 0 auto;
+        padding-bottom: 40px;
+    }
+
+    #seccion img {
+        width: 0px;
+        flex-grow: 1;
+        object-fit: cover;
+        opacity: .8;
+        transition: .5s ease0;
+    }
+
+    #seccion img:hover {
+        cursor: crosshair;
+        width: 500px;
+        opacity: 1;
+        filter: contrast(120%);
+    }
+</style>
+
+<body class="bg-black">
+    <script>
+        AOS.init();
+    </script>
+
+    <nav
+        class="bg-white dark:bg-black fixed w-full z-20 top-0 start-0 border-b border-y-[1px] border-gray-500">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">   
+            <a href="#primero" class="flex items-center space-x-3 rtl:space-x-reverse">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ52o8q2k9mHSckbBz-SvvAHO1mq2g1nQuyu2KU9kczIw&s" class="h-8 border-[1px] border-gray-500" alt="Flowbite Logo">
+            </a>
+            <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+                <a href="#cuarto" type="button"
+                    class="text-white bg-[#942525] hover:bg-[#942525] focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-[#942525] dark:hover:bg-[#942525] dark:focus:ring-[#942525]">Contacto</a>
+                <button data-collapse-toggle="navbar-sticky" type="button"
+                    class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                    aria-controls="navbar-sticky" aria-expanded="false">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 17 14">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M1 1h15M1 7h15M1 13h15" />
+                    </svg>
+                </button>
+            </div>
+            <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+                <ul
+                    class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-black md:dark:bg-black dark:border-gray-700">
+                    <li>
+                        <a href="#primero"
+                            class="block py-2 px-3 text-white bg-[#942525] rounded md:bg-transparent md:text-[#942525] md:p-0 md:dark:text-[#942525]"
+                            aria-current="page">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="#segundo"
+                            class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#942525] md:p-0 md:dark:hover:text-[#942525] dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Galeria</a>
+                    </li>
+                    <li>
+                        <a href="#tercero"
+                            class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#942525] md:p-0 md:dark:hover:text-[#942525] dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Trailer</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <h1 id="primero" data-aos="fade-right" class="text-4xl font-bold text-center m-6 pt-20 text-[#942525] shadow-xl">
+        MI SERIE FAVORITA
+    </h1>
+
+    <p data-aos="fade-left" class="text-center px-56 pb-7 text-white">
+        Stranger Things es una serie de televisión web dramática de suspenso, ciencia ficción y terror estadounidense,
+        coproducida y distribuida por Netflix. Creado por los hermanos Matt y Ross Duffer, y producida ejecutivamente
+        por Shawn Levy, se estrenó en la plataforma el 15 de julio de 2016; la segunda y tercera temporada se estrenó
+        el 27 de octubre de 2017 y el 4 de julio de 2019, respectivamente y su cuarta temporada se estrenó en 2
+        partes el 27 de mayo y el 1 de julio de 2022. En febrero de 2022 la serie fue renovada para una quinta y
+        última temporada, que, después de los retrasos por la huelga SAG-AFTRA, comenzó su producción el 8 de enero de
+        2024. <br><br>
+
+        Ambientada durante la década de los 80's, la historia se sitúa en el pueblo ficticio de Hawkins, Indiana,
+        Estados Unidos, donde sus residentes comienzan a lidiar con una dimensión alternativa hostil conocida como
+        Upside Down, después de que una instalación de experimentación humana cercana abre una puerta entre ella y el
+        mundo normal. El reparto incluye a Winona Ryder, David Harbour, Finn Wolfhard, Millie Bobby Brown, Gaten
+        Matarazzo, Caleb McLaughlin, Natalia Dyer, Charlie Heaton, Cara Buono, Matthew Modine, Noah Schnapp, Sadie Sink,
+        Joe Keery, Dacre Montgomery, Sean Astin, Paul Reiser, Maya Hawke, Priah Ferguson y Brett Gelman. <br> <br>
+
+        Los hermanos Duffer desarrollaron Stranger Things como una mezcla de drama de investigación y elementos
+        sobrenaturales retratados con horror y sensibilidad infantil, al tiempo que infunden referencias a la cultura
+        pop de los años 1980. con referencias a películas de Steven Spielberg, Wes Craven, John Carpenter,
+        Stephen King, Rob Reiner y George Lucas, entre otros. También se inspiraron en experimentos realizados
+        durante la Guerra Fría y en teorías de conspiración que involucraban programas gubernamentales secretos.
+        <br><br>
+
+        Convertida en una de las series emblemáticas de Netflix, ha atraído una audiencia récord en la plataforma de
+        streaming. La serie recibió críticas positivas por parte de la prensa especializada, que elogió la
+        interpretación, caracterización, ritmo, atmósfera y el claro homenaje al Hollywood de la década de los ochenta.
+    </p>
+
+    <hr id="segundo" class="pb-7 border-[#942525]">
+
+    <h1 data-aos="fade-right" class="text-[#942525] text-center text-3xl font-semibold pb-7">-- Stranger Things --</h1>
+
+    <section data-aos="fade-left" id="seccion">
+        <img src="../fotos/1.jpg" alt="">
+        <img src="../fotos/2.jpg" alt="">
+        <img src="../fotos/3.jpg" alt="">
+        <img src="../fotos/4.jpg" alt="">
+        <img src="../fotos/5.jpg" alt="">
+    </section>
+
+    <hr id="tercero" class="py-5 mt-5 border-[#942525]">
+
+    <h1 data-aos="fade-right" class="text-center text-3xl text-[#942525] font-bold pb-7">
+        -- Trailer --
+    </h1>
+
+    <div class="flex items-center justify-center">
+        <iframe class="max-w-full" width="854" height="440" src="https://www.youtube.com/embed/d0JYlUTbv1A"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+    </div>
+
+    <hr class="mt-7 border-[#942525]">
+
+    <h1 id="cuarto" data-aos="fade-right" class="text-center text-3xl text-[#942525] font-bold pt-7">
+        -- ¿Te gustaría saber mas de la serie? --
+    </h1>
+
+    <form data-aos="fade-left" class="max-w-md mx-auto pt-5 pb-10">
+        <div class="relative z-0 w-full mb-5 group">
+            <input type="email" name="floating_email" id="floating_email"
+                class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-[#942525] focus:outline-none focus:ring-0 focus:border-[#942525] peer"
+                placeholder=" " required />
+            <label for="floating_email"
+                class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-red-600 peer-focus:dark:text-red-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Nombre
+            </label>
+        </div>
+        <div class="relative z-0 w-full mb-5 group">
+            <input type="email" name="floating_email" id="floating_email"
+                class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-[#942525] focus:outline-none focus:ring-0 focus:border-[#942525] peer"
+                placeholder=" " required />
+            <label for="floating_email"
+                class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-red-600 peer-focus:dark:text-red-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Correo
+            </label>
+        </div>
+        <div class="relative z-0 w-full mb-5 group">
+            <input type="email" name="floating_email" id="floating_email"
+                class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-[#942525] focus:outline-none focus:ring-0 focus:border-[#942525] peer"
+                placeholder=" " required />
+            <label for="floating_email"
+                class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-red-600 peer-focus:dark:text-red-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Teléfono
+            </label>
+        </div>
+        <button type="submit"
+            class="text-white bg-[#942525] hover:bg-[#942525] focus:ring-4 focus:outline-none focus:ring-[#942525] font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-[#942525] dark:hover:bg-[#942525] dark:focus:ring-[#942525]">Enviar</button>
+    </form>
+
+</body>
+
+</html>
